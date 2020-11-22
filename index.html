@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flora VIP luxery</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="container">
+
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <li>
+                        <a href="#work" class="nav-panell">Наші роботи</a>
+                    </li>
+                    <li>
+                        <a href="#catalog" class="nav-panell">Каталог</a>
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <img src="img/logo.png" alt="1" class="media-logo">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#feedback" class="nav-panell">Відгуки</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="nav-panell">Контакти</a>
+                    </li>
+
+                </div>
+            </div>
+
+        </nav>
+        <div class="main-block">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-4">
+
+                        <div class="row">
+
+                            <img src="img/big-logo.png" alt="1" class="main-logo">
+
+                        </div>
+                        <div class="row">
+
+                            <h2 class="main-title">100% свіжі квіти</h2>
+
+                        </div>
+                        <div class="row">
+                            <div class="btn-case">
+
+
+                                <a href="#catalog">
+                                    <button type="button" class="btn btn-flora">Дивитися каталог</button></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-8">
+                        <img src="img/main-foto.png" alt="1" class="main-foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="first-section">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+                    <div class="col">
+                        <div class="row border-row">
+                            <img src="ico/ico1.svg" alt="" class="ico">
+                        </div>
+
+                        <div class="row ">
+                            <div class="item-text">
+
+                                Тільки свіжі троянди, поставка квітів кожні 2 дні
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row border-row">
+                            <img src="ico/ico2.svg" alt="" class="ico">
+                        </div>
+
+                        <div class="row">
+                            <div class="item-text">
+                                Правильне зберігання квітів в холодильній камері при температурі +5С
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row border-row">
+                            <img src="ico/ico3.svg" alt="" class="ico">
+                        </div>
+
+                        <div class="row">
+                            <div class="item-text">
+                                Досвідчені флористи не залишать вас без гарного букета троянд
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/info-foto.png" alt="2" class="big-img">
+                    </div>
+                    <div class="col info-text">
+                        <div class="row">
+                            <h2 class="info-title">
+                                Кращий подарунок для ваших улюблених
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <a href="#c">
+                                <button type="button" class="btn btn-flora1" data-toggle="modal"
+                                data-target="#exampleModal">Дізнатися детальніше</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="second-section" id="work">
+        <div class="container">
+            <h2 class="blog-title d-flex justify-content-center">
+                Наші роботи
+            </h2>
+            <h3 class="blog-span">
+                floravipluxe_kyiv
+            </h3>
+
+
+
+            <div class="container">
+                <div class="row" id="instafeed-container">
+                </div>
+            </div>
+
+            <script
+                src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    limit: 9,
+                    resolution: 'standard_resolution',
+                    template: '<div class="col-4"><a href="{{link}}"><img class="insta-image" title="{{caption}}" src="{{image}}" /></a></div>',
+                    accessToken: 'IGQVJVRk9vRnMzeFhXcml0MlpFMktrVi1Id2VfZAHBKSFZADWU9PUU00UW1uNlZABUGJlMW81Um91NXRZAUXdPX3lCazBCMW96UEJpU28ycHFkbkhaRV9fZAnI4cmhJVXE3VnQybU9FLWZAMSzdTZAy1OZAlRaSwZDZD'
+                });
+                userFeed.run();
+            </script>
+
+
+            <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-f3d1b7d7-a8ff-4f48-95ff-8a73c2d83c42"></div> -->
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="catalog-section" id="catalog">
+        <div class="container">
+            <h2 class="catalog-title d-flex justify-content-center">
+                Каталог квітів
+            </h2>
+            <div class="catalog-span d-flex justify-content-center">
+                на ціну впливає ВИСОТА квітки
+            </div>
+            <div class="row  space">
+                <div class="col-3">
+                    <img src="img/flover-img/card 9.png" alt="" class="catalog-card">
+
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                    </div>
+
+                    </a>
+
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 10.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 11.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 12.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-3">
+                    <img src="img/flover-img/card 13.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 14.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 15.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 16.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-3">
+                    <img src="img/flover-img/card 17.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 18.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 19.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 20.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-3">
+                    <img src="img/flover-img/card 21.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 22.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 23.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 24.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-3">
+                    <img src="img/flover-img/card 25.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 26.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 27.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 29.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/flover-img/card 30.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 31.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 32.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="img/flover-img/card 33.png" alt="" class="catalog-card">
+                    <div class="catalog-btn d-flex justify-content-center">
+                        <a href="#blog">
+                            <button type="button" class="btn btn-catalog" data-toggle="modal"
+                                data-target="#exampleModal">Замовити</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contacts-block" id="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="contacts-title">
+                            Відгуки наших покупців
+                        </h3>
+                    </div>
+                    <div class="col">
+                        <h3 class="contacts-title">
+                            Напишіть нам, щоб дізнатись про актуальні акції
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="img-contacts">
+                            <div> <img src="img/insta/photo_2020-11-21_19-09-33.jpg" alt="" class="slider-img"> </div>
+                            <div><img src="img/insta/photo_2020-11-21_19-09-25.jpg" alt="" class="slider-img"></div>
+                            <div><img src="img/insta/photo_2020-11-21_19-09-29.jpg" alt="" class="slider-img"></div>
+                            <div><img src="img/insta/photo_2020-11-21_19-09-42.jpg" alt="" class="slider-img"></div>
+                            <div><img src="img/insta/photo_2020-11-21_19-09-47.jpg" alt="" class="slider-img"></div>
+                            <div><img src="img/insta/photo_2020-11-21_19-09-51.jpg" alt="" class="slider-img"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <form action="telegram.php" method="POST">
+
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control  style-form" id="" name="user_name"
+                                    placeholder="Ваше ім'я">
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control  style-form" id="" name="user_phone"
+                                    placeholder="Номер телефону">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-flora1">Відправити заявку</button>
+                        </form>
+
+                        <div class="contacts-image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly" defer></script>
+        <script>
+            var map,
+                marker,
+                markers = [],
+                infowindow;
+
+            var locations = [
+                { title: 'Київ,  Оболонський проспект, 21', lat: 50.514318, lng: 30.497633 },
+                { title: 'Житомир,  вул. Отаманов Соколовских, 9/11', lat: 50.276142, lng: 28.665240 },
+                { title: 'Житомир,  вул. Небесной сотни, 27', lat: 50.260073, lng: 28.667577 },
+                { title: 'Вінниця,  вул. Гліба Успенського, 14', lat: 49.230409, lng: 28.484844, },
+                { title: 'вул. Келецька, 72', lat: 49.225495, lng: 28.416489 },
+                { title: 'Вінниця, вул. Соборна 97, 14', lat: 49.234077, lng: 28.460048 },
+                { title: 'Коростишів, вул. Небесної сотні', lat: 49.225495, lng: 28.416489 },
+                { title: 'Шепетівка, вул. Островського 9', lat: 50.180066, lng: 27.061704 },
+                { title: 'Новоград-Волинський, вул. Соборності 44/2', lat: 50.589425, lng: 27.6213143 },
+                { title: 'Новоград-Волинський, вул. Шевченка 46-а', lat: 50.588213, lng: 27.605800 },
+                { title: 'Коростень, вул. Грушевського 29', lat: 50.946438, lng: 28.637248 },
+
+            ];
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: { lat: 50.514318, lng: 30.497633 },
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                });
+                infowindow = new google.maps.InfoWindow();
+                for (let i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(
+                            locations[i].lat,
+                            locations[i].lng
+                        ),
+                        map: map,
+                        title: locations[i].title,
+                    });
+                    markers.push(marker);
+                }
+            }
+
+            function goToMarker(i) {
+                infowindow.setContent(markers[i].title);
+                infowindow.open(map, markers[i]);
+            }
+        </script>
+        <style>
+            #map {
+                width: 500px;
+                height: 500px;
+
+            }
+
+            @media (max-width:530px) {
+                #map {
+                    height: 400px;
+                    width: 400px;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (max-width:475px) {
+                #map {
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        </style>
+
+
+        <div class="map-block" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="col media-map">
+
+
+                        <h2 class="catalog-title d-flex justify-content-center mb-40">
+                            Пункти самовивозу
+                        </h2>
+
+                        <button class="map-btn" onclick="goToMarker(0)">- Київ, Оболонський проспект, 21 <a
+                                class="map-phone" href="tell:+380688880045">0(68)-826-00-45</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(1)">- Житомир, вул. Отаманов Соколовских, 9/11 <a
+                                class="map-phone" href="tell:+380688880045">0(68)-888-00-45</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(2)">- Житомир, вул. Небесной сотни, 27 <a
+                                class="map-phone" href="tell:+380682928888">0(68)-292-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(3)">- Вінниця, вул. Гліба Успенського, 14 <a
+                                class="map-phone" href="tell:+380688458888">0(68)-845-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(4)">- Вінниця, вул. Келецька, 72 <a
+                                class="map-phone" href="tell:+380680468888"> 0(68)-046-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(5)">- Вінниця, вул. Соборна 97, 14 <a
+                                class="map-phone" href="tell:+380680478888"> 0(68)-047-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(6)">- Коростишів, вул. Небесної сотні, 53 <a
+                                class="map-phone" href="tell:+380680858888">0(68)-085-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(7)">- Шепетівка, вул. Островського, 9 <a
+                                class="map-phone" href="tell:+380680498888">0(68)-049-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(8)">- Новоград-Волинський, вул. Соборності 44/2 <a
+                                class="map-phone" href="tell:+380689398888">0(68)-939-88-88 </a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(9)">- Новоград-Волинський, вул. Шевченка 46-а <a
+                                class="map-phone" href="tell:+380680598888">0(68)-059-88-88</a> </a></button>
+                        <button class="map-btn" onclick="goToMarker(10)">- Коростень, вул. Грушевського 29 <a
+                                class="map-phone" href="tell:+380682278888">0(68)-227-88-88</a> </a></button>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="last-block">
+            <div class="container">
+                <div class="row ">
+                    <div class="last-info1">
+                        <div class="col">
+
+                            <img src="img/last-info.png" alt="" class="last-img">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="last-info">
+                            <div class="row d-flex justify-content-center">
+
+
+                                <h2 class="catalog-title d-flex justify-content-center">
+                                    Безкоштовна консультація
+                                </h2>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <button type="button" class="btn btn-flora1" data-toggle="modal"
+                                    data-target="#exampleModal">Замовити</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-space ">
+                <div class="col">
+                    <img src="img/footer-logo.png" alt="" class="footer-logo">
+                </div>
+                <div class="col-2 align-self-center">
+                    <a href="" class="footer-nav">Роботи</a>
+                </div>
+                <div class="col-2 align-self-center">
+                    <a href="" class="footer-nav">Каталог</a>
+                </div>
+                <div class="col-2 align-self-center">
+                    <a href="" class="footer-nav">Відгуки</a>
+                </div>
+                <div class="col-2 align-self-center">
+                    <a href="" class="footer-nav">Контакти</a>
+                </div>
+                <div class="col align-self-center ">
+                    <div class="row">
+                        <a href="https://m.facebook.com/Flora-VIP-Luxe-KYIV-109893660808278/">
+                            <img src="ico/contacts-ico.svg" alt="" class="icon">
+                        </a>
+                        <a href="">
+                            <img src="ico/contacts-ico2.svg" alt="https://www.instagram.com/floravipluxe_kyiv/"
+                                class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="end">
+                    FloraVIPLuxe © 2020 Все права защищены | Политика конфиденциальности
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Для замовлення оберіть Ваше місто</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="telegram.php" method="POST">
+
+                            <div class="form-group">
+
+                                <select class="custom-select style-form2" id="inputGroupSelect01">
+                                    <option selected>Місто</option>
+                                    <option value="1">Київ</option>
+                                    <option value="2">Житомир</option>
+                                    <option value="3">Вінниця</option>
+                                    <option value="4">Коростишів</option>
+                                    <option value="5">Шепетівка</option>
+                                    <option value="6">Новоград-Волинський</option>
+                                    <option value="7">Коростень</option>
+                                  </select>
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control  style-form2" id="" name="user_name"
+                                    placeholder="Ваше ім'я">
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control  style-form2" id="" name="user_phone"
+                                    placeholder="Номер телефону">
+                            </div>
+
+                            <div class="row"><button type="submit" class="btn modal-center">Відправити заявку</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
